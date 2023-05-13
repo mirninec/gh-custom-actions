@@ -15,7 +15,7 @@ jobs:
           # Default: ${{ github.repository }}
           repository: ${{ github.repository }}
       - name: Load & cache dependencies
-        uses: ./action.yml
+        uses: ./
       - name: Lint code
         run: npm run lint
   test:
